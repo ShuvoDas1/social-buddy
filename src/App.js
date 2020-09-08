@@ -12,10 +12,22 @@ import Header from './components/Header/Header';
 
 
 function App() {
-
+  const [posts,setPosts]=useState([])
+  useEffect(()=>{
+    const url='https://jsonplaceholder.typicode.com/posts';
+    fetch(url)
+    .then(res => res.json())
+    .then(data => setPosts(data))
+  },[])
+  
   return (
     <div>
-      <Header></Header>
+      <Router>
+        <Header></Header>
+        <Switch>
+
+        </Switch>
+      </Router>
     </div>
   )
 }

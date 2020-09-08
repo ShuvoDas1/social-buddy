@@ -5,12 +5,11 @@ import './Header.css'
 const Header = () => {
 
     return (
-        <div>
+        <div className='header'>
              <h1>Social Buddy</h1>
             <nav>
-                <a href="/shop">Shop</a>
-                <a href="/review">Order review</a>
-                <a href="/inventory">Manage inventory here</a>
+                <a href="/post">Posts</a>
+                
             </nav>
         </div>
 
